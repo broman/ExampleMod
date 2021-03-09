@@ -14,22 +14,13 @@ namespace ValheimRP {
         internal static ValheimRP Instance { get; private set; }
 
         /// <summary>
-        ///     Awake is called when the script instance is being loaded.
+        /// Awake is called when the script instance is being loaded.
         /// </summary>
         private void Awake() {
             Instance = this;
             Log.Init(Logger);
             Init();
         }
-
-        /// <summary>
-        ///     Destroying the attached Behaviour will result in the game or Scene receiving OnDestroy.
-        ///     OnDestroy occurs when a Scene or game ends.
-        ///     It is also called when your mod is unloaded, this is where you do clean up of hooks, harmony patches,
-        ///     loose GameObjects and loose monobehaviours.
-        ///     Loose here refers to gameobjects not attached
-        ///     to the parent BepIn GameObject where your BaseUnityPlugin is attached
-        /// </summary>
         private void OnDestroy() {
             Disable();
         }
@@ -41,7 +32,9 @@ namespace ValheimRP {
         }
 
         /// <summary>
-        ///     Disable the enabled hooks.
+        /// Disables the enabled hooks.
+        /// Should be called when the game scene is destroyed, or mod is unloaded.
+        /// <seealso cref="OnDestroy"/>
         /// </summary>
         private static void Disable() {
             DisableMonoModHooks();

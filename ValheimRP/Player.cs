@@ -5,6 +5,12 @@ using JetBrains.Annotations;
 namespace ValheimRP {
     [HarmonyPatch(typeof(Player), "OnDamaged")]
     internal class VRPPlayer {
+        /// <summary>
+        /// Logs any damage done to the player.
+        /// </summary>
+        /// <param name="__instance">Player instance being damaged.</param>
+        /// <param name="hit">Context of the hit being performed.</param>
+        /// <returns>true always</returns>
         [UsedImplicitly]
         private static bool Prefix(Player __instance, HitData hit) {
             var attacker = hit.GetAttacker();
