@@ -50,15 +50,8 @@ namespace ExampleMod
 
         private static void OnFejdStartupAwakeMonoModHookShowcase(On.FejdStartup.orig_Awake orig, FejdStartup self)
         {
-            CoroutineExtensions.DelayedMethod(2, () =>
-            {
-                Log.LogInfo("Hello from a monomod hook, this method is fired after a 2 seconds delay !");
-            });
-
             // calling the original method
             orig(self);
-
-            Log.LogInfo("Hello from a monomod hook, this method is fired after the original method is called : " + self.m_betaText);
         }
     }
 
@@ -68,20 +61,12 @@ namespace ExampleMod
     {
         static bool Prefix(FejdStartup __instance)
         {
-            CoroutineExtensions.DelayedMethod(2, () =>
-            {
-                Log.LogInfo("Hello from Patch.Prefix() , this method is fired after a 2 seconds delay !");
-            });
-
-            // if we return false in a Prefix
-            // we skip all other potential hooks
-            // from other mods hooking this same method !
             return true; 
         }
 
         static void Postfix(FejdStartup __instance)
         {
-            Log.LogInfo("Hello from Patch.Postfix(), this method is fired after the original method is called : " + __instance.m_betaText);
+            
         }
     }
 }

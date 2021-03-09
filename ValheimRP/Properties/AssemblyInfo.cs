@@ -4,12 +4,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ExampleMod")]
+[assembly: AssemblyTitle("ValheimRP")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ExampleMod")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
+[assembly: AssemblyProduct("ValheimRP")]
+[assembly: AssemblyCopyright("ValheimRP is licensed under the Do What The F**k You Want To Public License")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
