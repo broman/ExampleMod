@@ -1,4 +1,10 @@
-﻿using BepInEx.Logging;
+﻿/*
+ * Player.cs
+ * Created by Ryan Broman on 2021-03-08
+ * ryan@broman.dev
+ */
+
+using BepInEx.Logging;
 
 namespace ValheimRP {
     /// <summary>

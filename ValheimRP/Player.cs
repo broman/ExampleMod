@@ -1,4 +1,10 @@
-﻿using HarmonyLib;
+﻿/*
+ * Player.cs
+ * Created by Ryan Broman on 2021-03-09
+ * ryan@broman.dev
+ */
+
+using HarmonyLib;
 using JetBrains.Annotations;
 
 namespace ValheimRP {

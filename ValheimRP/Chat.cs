@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Player.cs
+ * Created by Ryan Broman on 2021-03-09
+ * ryan@broman.dev
+ */
+
+using System;
 using HarmonyLib;
 using JetBrains.Annotations;
 using UnityEngine;
