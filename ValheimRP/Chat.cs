@@ -1,5 +1,5 @@
 ﻿/*
- * Player.cs
+ * Chat.cs
  * Created by Ryan Broman on 2021-03-09
  * ryan@broman.dev
  */
